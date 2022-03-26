@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="org.testing.TestScripts.TC1_Users">
+        <methods>
+          <include name="fieldForce"/>
+          <include name="usersModule"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC1_Users -->
+      <class name="org.testing.TestScripts.TC3_Analytics">
+        <methods>
+          <include name="analyticsModule"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC3_Analytics -->
+      <class name="org.testing.TestScripts.TC2_UserPermissions">
+        <methods>
+          <include name="usersPermissions"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC2_UserPermissions -->
+      <class name="org.testing.TestScripts.TC4_Counsellors">
+        <methods>
+          <include name="counsellorModule"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC4_Counsellors -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

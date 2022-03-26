@@ -1,0 +1,23 @@
+{
+	"MobileNo": "9045625465",
+	"FirstName": "SUSHIL",
+	"LastName": "KUMAR",
+	"Gender": "MALE",
+	"EmailAddress": "SUSHIL.AGRAWAL89@GMAIL.COM",
+	"Address": [
+		{
+			"HomeAddress": {
+				"Sector": "Sector 12",
+				"Area": "Dharam Colony"
+			}
+		},
+		{
+			"OfficeAddress": {
+				"Sector": "Sector 10",
+				"Area": "Udyog Vihar"
+			}
+		}
+	]
+		
+	
+}

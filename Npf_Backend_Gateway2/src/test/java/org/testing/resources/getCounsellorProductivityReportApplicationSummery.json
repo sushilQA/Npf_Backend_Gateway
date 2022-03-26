@@ -1,0 +1,26 @@
+{
+	"collegeId": "176",
+	"columns": [
+		"ApplicationAssigned",
+		"ApplicationEngaged",
+		"PaymentApproved",
+		"ApplicationsSubmitted",
+		"Enrolment",
+		"ApplicationTotalActivities",
+		"ApplicationStageChange",
+		"ApplicationNotesAdded",
+		"ApplicationFollow-upAdded",
+		"ApplicationFollow-upOverdueCounts",
+		"ApplicationFollow-upCompleted",
+		"ApplicationEmailSent",
+		"ApplicationSMSSent",
+		"ApplicationWhatsApp",
+		"ApplicationOutboundSuccess",
+		"ApplicationOutboundMissed"
+	],
+	"counsellorId": [
+		"13105574"
+	],
+	"dateRange": "05/01/2022,03/02/2022",
+	"formId": ""
+}

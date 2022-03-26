@@ -19,7 +19,7 @@ public class Forms {
 	ApiValidation apiValidation = new ApiValidation();
 
 	public void getCollegeConfigOptions(String URL,String environment) throws IOException, BiffException {
-		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway/URI.properties");
+		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway2/URI.properties");
 		UserModule users = new UserModule(properties);
 		users.loginBackendUser(URL,environment);
 		String access_tokens = users.access_tokens;

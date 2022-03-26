@@ -15,7 +15,7 @@ public class TC5_Leads {
 	@Test
 	public void counsellorModule() throws IOException, BiffException {
 		System.out.println("Leads");
-		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway/URI.properties");
+		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway2/URI.properties");
 		Leads leads = new Leads();
 		leads.leadsModule(properties.getProperty("In1"),"Live");
 	}

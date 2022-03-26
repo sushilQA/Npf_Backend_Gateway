@@ -13,7 +13,7 @@ public class TC1_Users {
 	@Test(priority=1)
 	public void usersModule() throws IOException, BiffException {
 		System.out.println("User Module");
-		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway/URI.properties");
+		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway2/URI.properties");
 		UserModule userModule = new UserModule(properties);
 		userModule.usersModule(properties.getProperty("In1"),"Live");
 	}
@@ -21,7 +21,7 @@ public class TC1_Users {
 	@Test(priority = 2)
 	public void fieldForce() throws IOException, BiffException {
 		System.out.println("Field Force");
-		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway/URI.properties");
+		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway2/URI.properties");
 		UserModule userModule = new UserModule(properties);
 		userModule.fieldForce(properties.getProperty("In1"),"Live");
 	}

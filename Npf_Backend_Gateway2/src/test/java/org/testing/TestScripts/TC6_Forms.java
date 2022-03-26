@@ -16,7 +16,7 @@ public class TC6_Forms {
 	@Test
 	public void counsellorModule() throws IOException, BiffException {
 		System.out.println("Forms");
-		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway/URI.properties");
+		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway2/URI.properties");
 		Forms forms = new Forms();
 		forms.getCollegeConfigOptions(properties.getProperty("In1"),"Live");
 	}

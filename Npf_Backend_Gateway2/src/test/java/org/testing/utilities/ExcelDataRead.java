@@ -10,7 +10,7 @@ public class ExcelDataRead {
 	
 	public static String readACell(String sheetName,int rown , int column ) throws BiffException, IOException
 	{
-		File file = new File("../Npf_Backend_Gateway/src/test/java/org/testing/resources/UsersCredentials.xls");
+		File file = new File("../Npf_Backend_Gateway2/src/test/java/org/testing/resources/UsersCredentials.xls");
 		Workbook workbook = Workbook.getWorkbook(file);
 		Sheet sheet = workbook.getSheet(sheetName);
 		Cell cell = sheet.getCell(column, rown);
@@ -20,7 +20,7 @@ public class ExcelDataRead {
 	
 	public static int getNumberOfRows() throws BiffException, IOException
 	{
-		File file = new File("../ApiFramwork/src/test/java/org/testing/resources/Request.xls");
+		File file = new File("../Npf_Backend_Gateway2/src/test/java/org/testing/resources/UsersCredentials.xls");
 		Workbook workbook = Workbook.getWorkbook(file);
 		Sheet sheet = workbook.getSheet(0);
 		return sheet.getRows();
@@ -29,7 +29,7 @@ public class ExcelDataRead {
 	
 	public static int getNumberOfColumns() throws BiffException, IOException
 	{
-		File file = new File("../ApiFramwork/src/test/java/org/testing/resources/Request.xls");
+		File file = new File("../Npf_Backend_Gateway2/src/test/java/org/testing/resources/UsersCredentials.xls");
 		Workbook workbook = Workbook.getWorkbook(file);
 		Sheet sheet = workbook.getSheet(0);
 		return sheet.getColumns();

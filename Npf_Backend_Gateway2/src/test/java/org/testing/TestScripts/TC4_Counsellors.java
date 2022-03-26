@@ -14,7 +14,7 @@ public class TC4_Counsellors {
 	@Test
 	public void counsellorModule() throws IOException, BiffException {
 		System.out.println("Analytics Controler");
-		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway/URI.properties");
+		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway2/URI.properties");
 		Counsellors counsellors = new Counsellors();
 		counsellors.counsellorsModule(properties.getProperty("In1"),"Live");
 	}

@@ -24,7 +24,7 @@ public class Counsellors {
 	Backend_Gateway_Request backend_Gateway_Request = new Backend_Gateway_Request();
 
 	public void counsellorsModule(String URL,String environment) throws IOException, BiffException {
-		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway/URI.properties");
+		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway2/URI.properties");
 		UserModule users = new UserModule(properties);
 		users.loginBackendUser(URL,environment);
 		String access_tokens = users.access_tokens;

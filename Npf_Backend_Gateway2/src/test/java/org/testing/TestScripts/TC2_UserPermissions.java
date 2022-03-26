@@ -16,7 +16,7 @@ public class TC2_UserPermissions {
 	@Test
 	public void usersPermissions() throws IOException, BiffException {
 		System.out.println("User Permissions");
-		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway/URI.properties");
+		Properties properties = LoadPropertiesFile.handlePropertyFile("../Npf_Backend_Gateway2/URI.properties");
 		User_Permissions userPermissions = new User_Permissions();
 		userPermissions.allBackendUserPermissions(properties.getProperty("In1"),"Live");
 	}

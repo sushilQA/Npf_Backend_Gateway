@@ -32,9 +32,9 @@ public class UserModule {
 		this.properties = properties;
 	}
 
-	public void usersModule(String uriKey ,String environment) throws IOException, BiffException {
+	public Response usersModule(String uriKey ,String environment) throws IOException, BiffException {
 
-		emailAuth(uriKey,environment);
+		Response response = emailAuth(uriKey,environment);
 		loginBackendUser(uriKey,environment);
 		checkPasswordExpired(uriKey, access_tokens, deviceId);
 		getCollegeList(uriKey, access_tokens, deviceId);
@@ -46,6 +46,7 @@ public class UserModule {
 		logoutBackendUser(uriKey);
 		forgotPasswordBackendUser(uriKey,environment);
 		resetPasswordBackendUser(uriKey ,environment);
+		return response;
 
 	}
 
@@ -62,12 +63,13 @@ public class UserModule {
 
 	}
 
-	public void emailAuth(String uriKey,String environment) throws BiffException, IOException {
+	public Response emailAuth(String uriKey,String environment) throws BiffException, IOException {
 		System.out.println("******************** Email Auth ********************\n");
 		backend_Gateway_Request.setEmail(ExcelDataRead.readACell(environment,1, 0));
 		Response response = given().contentType(ContentType.JSON).body(backend_Gateway_Request).when()
 				.post(uriKey + "/users/v1/emailAuth");
-		apiValidation.apiValidation(response);
+		return response;
+		//apiValidation.apiValidation(response);
 	}
 
 	public void loginBackendUser(String URL,String environment) throws BiffException, IOException {

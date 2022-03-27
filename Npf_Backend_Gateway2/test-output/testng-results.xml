@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5720" started-at="2022-03-26T00:35:41Z" finished-at="2022-03-26T00:35:47Z">
+  <suite name="Default suite" duration-ms="3476" started-at="2022-03-27T06:04:06Z" finished-at="2022-03-27T06:04:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5720" started-at="2022-03-26T00:35:41Z" finished-at="2022-03-26T00:35:47Z">
-      <class name="org.testing.TestScripts.TC5_Leads">
-        <test-method status="PASS" signature="counsellorModule()[pri:0, instance:org.testing.TestScripts.TC5_Leads@1198b989]" name="counsellorModule" duration-ms="5704" started-at="2022-03-26T06:05:41Z" finished-at="2022-03-26T06:05:47Z">
+    <test name="Default test" duration-ms="3476" started-at="2022-03-27T06:04:06Z" finished-at="2022-03-27T06:04:09Z">
+      <class name="org.testing.TestScripts.TC1_Users">
+        <test-method status="PASS" signature="usersModule()[pri:0, instance:org.testing.TestScripts.TC1_Users@197d671]" name="usersModule" duration-ms="3444" started-at="2022-03-27T11:34:06Z" finished-at="2022-03-27T11:34:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- counsellorModule -->
-      </class> <!-- org.testing.TestScripts.TC5_Leads -->
+        </test-method> <!-- usersModule -->
+      </class> <!-- org.testing.TestScripts.TC1_Users -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
